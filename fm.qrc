@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/del.png</file>
+        <file>image/heart.png</file>
+        <file>image/list.png</file>
+        <file>image/login.png</file>
+        <file>image/next.png</file>
+        <file>image/play.png</file>
+        <file>image/user.png</file>
+        <file>image/cover.png</file>
+        <file>image/pause.png</file>
+        <file>image/left.png</file>
+        <file>image/right.png</file>
+        <file>image/bcolor.png</file>
+        <file>image/loginbutton.png</file>
+        <file>image/icon.png</file>
+        <file>image/heart-.png</file>
+        <file>image/del-.png</file>
+        <file>image/left-.png</file>
+        <file>image/next-.png</file>
+        <file>image/pause-.png</file>
+        <file>image/play-.png</file>
+        <file>image/right-.png</file>
+        <file>image/user-.png</file>
+        <file>image/bg--.png</file>
+        <file>image/voice.png</file>
+        <file>image/voice-.png</file>
+        <file>image/voiceoff.png</file>
+        <file>image/voiceoff-.png</file>
+        <file>image/head.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fm</class>
+ <widget class="QWidget" name="fm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>414</width>
+    <height>218</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>fm</string>
+  </property>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>190</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>国王与乞丐</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalTime">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>80</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文细黑</family>
+     <pointsize>11</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;04:05&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentTime">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;00:00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="volumeIcon">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>280</y>
+     <width>15</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/volume_normal.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="artistLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>190</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>华晨宇 / 杨宗纬</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="picLabel">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>13</y>
+     <width>160</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/cover.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="likeButton">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>188</y>
+     <width>26</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/heart.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="userButton">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>188</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/user.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/user-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>414</width>
+     <height>218</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/bg--.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextButton">
+   <property name="geometry">
+    <rect>
+     <x>61</x>
+     <y>188</y>
+     <width>26</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/next.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/next-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>190</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/del.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/del-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="playButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>188</y>
+     <width>26</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/pause.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/pause-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="timeSlider">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>66</y>
+     <width>186</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**
+groove为槽的颜色，handle为按钮的颜色，add-page 及sub-page分别问按钮前后的颜色，如果groove与add-page、sub-page同在，那么groove的颜色会被覆盖掉。
+**/
+
+QSlider::groove:horizontal {
+border: 1px solid #855485;
+background: white;
+height: 4px;
+border-radius: 4px;
+}
+
+
+
+/*这是边框吗?*/
+/*按前颜色*/
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #fff, stop: 1 #fff);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #fff, stop: 1 #fff);
+border: 4px solid #fff;
+height: 4px;
+border-radius: 4px;
+}
+/*案前颜色*/
+QSlider::add-page:horizontal {
+background: #855485;
+border: 4px solid #855485;
+height: 4px;
+border-radius: 0px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 0px solid #855485;
+width: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+border-radius: 0px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #855485, stop:1 #ddd);
+border: 0px solid #444;
+border-radius: 0px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #855485;
+border-color: #855485;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #fff;
+border-color: #fff;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #855485;
+border: 0px solid #855485;
+border-radius: 0px;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="leftButton">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>195</y>
+     <width>10</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/left.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/left-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rightButton">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>195</y>
+     <width>10</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/right.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/right-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="channelButton">
+   <property name="geometry">
+    <rect>
+     <x>292</x>
+     <y>192</y>
+     <width>50</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;border-width:0px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="volumeSlider">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>190</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**
+groove为槽的颜色，handle为按钮的颜色，add-page 及sub-page分别问按钮前后的颜色，如果groove与add-page、sub-page同在，那么groove的颜色会被覆盖掉。
+**/
+
+QSlider::groove:horizontal {
+border: 1px solid #855485;
+background: white;
+height: 2px;
+border-radius: 1px;
+}
+
+
+
+/*这是边框吗?*/
+/*按前颜色*/
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #fff, stop: 1 #fff);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #fff, stop: 1 #fff);
+border: 4px solid #fff;
+height: 2px;
+border-radius: 2px;
+}
+/*进度条案前颜色*/
+QSlider::add-page:horizontal {
+background: #855485;
+border: 2px solid #855485;
+height: 2px;
+border-radius: 0px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:0,
+    stop:0 #855485, stop:1 #855485);
+border: 0px solid #855485;
+width: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+border-radius: 0px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:0,
+    stop:0 #855485, stop:1 #855485);
+border: 0px solid #855485;
+border-radius: 0px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #855485;
+border-color: #855485;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #fff;
+border-color: #fff;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #855485;
+border: 0px solid #855485;
+border-radius: 0px;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="voiceButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>194</y>
+     <width>18</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image: url(:/image/voice.png);
+border:0px 0px 0px 0px;}
+QPushButton:pressed{border-image: url(:/image/voice-.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>backgroundLabel</zorder>
+  <zorder>totalTime</zorder>
+  <zorder>currentTime</zorder>
+  <zorder>picLabel</zorder>
+  <zorder>userButton</zorder>
+  <zorder>nextButton</zorder>
+  <zorder>playButton</zorder>
+  <zorder>timeSlider</zorder>
+  <zorder>leftButton</zorder>
+  <zorder>rightButton</zorder>
+  <zorder>artistLabel</zorder>
+  <zorder>titleLabel</zorder>
+  <zorder>channelButton</zorder>
+  <zorder>volumeIcon</zorder>
+  <zorder>volumeSlider</zorder>
+  <zorder>likeButton</zorder>
+  <zorder>deleteButton</zorder>
+  <zorder>voiceButton</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>playButton</tabstop>
+  <tabstop>nextButton</tabstop>
+  <tabstop>likeButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>leftButton</tabstop>
+  <tabstop>rightButton</tabstop>
+  <tabstop>userButton</tabstop>
+  <tabstop>timeSlider</tabstop>
+  <tabstop>channelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>custom</class>
+ <widget class="QDialog" name="custom">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/image/login.png);</string>
+  </property>
+  <widget class="QLineEdit" name="email">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>275</y>
+     <width>170</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/bcolor.png);
+background-image: url(:/image/bcolor.png);
+border-image: url(:/image/bcolor.png);
+background-color: rgb(0,0,0,0);
+color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhEmailCharactersOnly</set>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string notr="true">E-mail address</string>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::LogicalMoveStyle</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>490</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/bcolor.png);
+background-image: url(:/image/bcolor.png);
+border-image: url(:/image/bcolor.png);
+background-color: rgb(0,0,0,0);
+color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>350</y>
+     <width>170</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/bcolor.png);
+background-image: url(:/image/bcolor.png);
+border-image: url(:/image/bcolor.png);
+background-color: rgb(0,0,0,0);
+color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string notr="true">Password</string>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::VisualMoveStyle</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>408</y>
+     <width>235</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/loginbutton.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="userIconLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>56</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;border-width:0px;
+image: url(:/image/icon.png);
+background-color: rgb(0,0,0,0);
+color: rgb(255, 255, 255);
+font: 75 11pt &quot;华文细黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>56</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/head.png);
+background-image: url(:/image/head.png);
+border-image: url(:/image/head.png);
+background-color: rgb(0,0,0,0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>cancelButton</zorder>
+  <zorder>email</zorder>
+  <zorder>password</zorder>
+  <zorder>loginButton</zorder>
+  <zorder>userIconLabel</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>email</tabstop>
+  <tabstop>password</tabstop>
+  <tabstop>loginButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
